@@ -4,7 +4,9 @@ body{
 }
 
 
-
+.logo{
+	background: url(../media/x.png) right top no-repeat; 
+}
 .logo-item{
 	/*background: #36d0b5;*/
 	height: 200px;
@@ -62,12 +64,7 @@ body{
 		right: 0;
 		display: table;
 		margin:auto;
-
-			-webkit-transition-duration: 1s;
-	-moz-transition-duration: 1s;
-	-ms-transition-duration: 1s;
-	-o-transition-duration: 1s;
-	transition-duration: 1s;
+		
 
 	}
 }
