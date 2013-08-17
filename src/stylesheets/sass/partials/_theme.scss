@@ -1,6 +1,22 @@
+body{
+
+}
+
+
 .logo-item{
 	background: #36d0b5;
 	height: 200px;
 	padding: 20px;
 }
 
+.item{
+	min-height:200px;
+	margin: 0 !important;
+	outline:1px solid #ccc;
+	&.text{
+		padding: 20px;
+	}
+	&.long{
+		height: 500px;
+	}
+}
