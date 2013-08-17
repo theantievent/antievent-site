@@ -9,8 +9,10 @@ html(lang='es')
 
   script(src='javascripts/antievent-site.components.js')
   script(src='javascripts/antievent-site.0.0.1.js')
+
   script.
-    $("#container").gridalicious({
-      gutter: 1,
-      width: 300
+    $('#container').isotope({
+      // options
+      itemSelector : '.isotope-item', 
+      layoutMode : 'masonry'
     });

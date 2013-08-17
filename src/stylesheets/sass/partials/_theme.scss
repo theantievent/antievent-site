@@ -1,22 +1,76 @@
 body{
-
+	background: #222;
+	color: #fff;
 }
+
 
 
 .logo-item{
-	background: #36d0b5;
+	/*background: #36d0b5;*/
 	height: 200px;
+	width: 200px;
 	padding: 20px;
+
+	h1{
+		position: absolute;
+		text-indent: -9999px;
+	}
 }
 
-.item{
-	min-height:200px;
+.isotope-item{
+	/*min-height:200px;*/
+	width: 200px;
+	height: 200px;
 	margin: 0 !important;
-	outline:1px solid #ccc;
+	/*border:1px solid #ccc;*/
+	overflow: hidden;
+
+	img{
+		height: 200px;
+	}
 	&.text{
 		padding: 20px;
 	}
 	&.long{
-		height: 500px;
+		height: 400px;
+	}
+	&.big{
+		width: 400px; 
+		height: 400px;
+		img{
+			height: 400px;
+		}
+	}
+	&.xbig{
+		width: 300px; 
+		height: 300px;
+		img{
+			height: 300px;
+		}
+	}
+	&:hover:before{
+		content:"";
+		background: rgba(#000,.5);
+		width: 90%;
+		height: 90%;
+		
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		display: table;
+		margin:auto;
+
+			-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+
 	}
 }
+/*img{
+	max-width: 100%;
+}*/
