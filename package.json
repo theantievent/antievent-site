@@ -1,30 +1,32 @@
 {
-  "name"                    : "antievent-site",
-  "version"                 : "0.0.1",
-  "description"             : "Flip your mind and change your knowledge.",
-  "homepage"                : "http://theantievent.org",
+  "name": "antievent-site",
+  "version": "0.0.1",
+  "description": "Flip your mind and change your knowledge.",
+  "homepage": "http://theantievent.org",
   "author": {
-    "name"                  : "Nextflip Coop.",
-    "site"                  : "http://nextflip.org"},
+    "name": "Nextflip Coop.",
+    "site": "http://nextflip.org"
+  },
   "dependencies": {
-    "restify"               : "*",
-    "coffee-script"         : "*",
-    "cron"                  : "*",
-    "jade"                  : "*",
-    "async"                 : "*",
-    "mongoose"              : "*",
-    "redis"                 : "*",
-    "js-yaml"               : "*"
+    "restify": "*",
+    "coffee-script": "*",
+    "cron": "*",
+    "jade": "*",
+    "async": "*",
+    "mongoose": "*",
+    "redis": "*",
+    "js-yaml": "*"
   },
   "devDependencies": {
-    "grunt-contrib-coffee"  : "*",
-    "grunt-contrib-stylus"  : "*",
-    "grunt-contrib-sass"    : "*",
-    "grunt-contrib-jade"    : "*",
-    "grunt-contrib-concat"  : "*",
-    "grunt-contrib-uglify"  : "*",
-    "grunt-contrib-copy"    : "*",
-    "grunt-contrib-watch"   : "*"
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-stylus": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-compass": "~0.5.0"
   },
   "scripts": {
     "lines": "find server.js api -name \"*.js\" -print0 | wc -l --files0-from=-"

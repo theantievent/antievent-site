@@ -36,6 +36,7 @@ module.exports = (grunt) ->
         "components/monocle/monocle.js",
         "components/appnima.js/appnima.js",
         "components/hope/hope.js",
+        "components/isotope/jquery.isotope.min.js",
         "components/device.js/device.js"]
 
     # =========================================================================
@@ -46,11 +47,13 @@ module.exports = (grunt) ->
       options: compress: false, banner: "<%= meta.banner %>"
       core: files: "<%=meta.package%>/javascripts/<%=pkg.name%>.<%=pkg.version%>.js": "build/<%=pkg.name%>.<%=pkg.version%>.debug.js"
 
-    sass:
+    compass: 
       dist:
-        options: style: "expanded"
-        files:
-          "<%=meta.package%>/stylesheets/<%=pkg.name%>.<%=pkg.version%>.css": "<%=source.sass%>"
+        options:
+          sassDir: 'src/stylesheets',
+          cssDir: '<%=meta.package%>/stylesheets',
+          environment: 'development'
+          
 
     jade:
       compile:
@@ -66,9 +69,9 @@ module.exports = (grunt) ->
       coffee:
         files: ["<%= source.coffee %>"]
         tasks: ["coffee", "uglify"]
-      sass:
+      compass:
         files: ["<%= source.sass_files %>"]
-        tasks: ["sass"]
+        tasks: ["compass"]
       jade:
         files: ["<%= source.jade_files %>"]
         tasks: ["jade"]
@@ -78,9 +81,9 @@ module.exports = (grunt) ->
 
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-uglify"
-  grunt.loadNpmTasks "grunt-contrib-sass"
   grunt.loadNpmTasks "grunt-contrib-jade"
   grunt.loadNpmTasks "grunt-contrib-concat"
   grunt.loadNpmTasks "grunt-contrib-watch"
+  grunt.loadNpmTasks "grunt-contrib-compass";
 
-  grunt.registerTask "default", [ "concat", "coffee", "uglify", "sass", "jade"]
+  grunt.registerTask "default", [ "concat", "coffee", "uglify", "compass", "jade"]
