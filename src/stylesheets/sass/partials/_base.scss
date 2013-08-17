@@ -12,6 +12,23 @@
 	box-sizing: border-box;
 }
 
+a,
+a code {
+  color: $color;
+  text-decoration: none;
+}
+
+a:hover,
+a:hover code { 
+  color: #4BF; 
+}
+
+a:active,
+a:active code {
+ /* color: #1FB;*/
+  background: black;
+}
+
 .color{
 	color:$color;
 }
