@@ -1,8 +1,9 @@
 // Modules and Variables
-@import "sass/partials/base";
+@import "sass/partials/base"; 
 
 // Partials
 @import "sass/partials/reset";
+@import "sass/partials/media";
 @import "sass/partials/typography";
 @import "sass/partials/buttons";
 @import "sass/partials/grids";
@@ -11,3 +12,5 @@
 // Third-party
 @import "sass/vendor/iconmoon";
 @import "sass/vendor/isotope";
+
+
