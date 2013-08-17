@@ -26,7 +26,6 @@ body{
 	margin: 0 !important;
 	/*border:1px solid #ccc;*/
 	overflow: hidden;
-
 	img{
 		height: 200px;
 	}
@@ -50,24 +49,8 @@ body{
 			height: 300px;
 		}
 	}
-	&:hover:before{
-		content:"";
-		background: rgba(#000,.5);
-		width: 90%;
-		height: 90%;
-		
-		position: absolute;
-		z-index: 999;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		display: table;
-		margin:auto;
-		
+	
 
-	}
 }
-/*img{
-	max-width: 100%;
-}*/
+
+
