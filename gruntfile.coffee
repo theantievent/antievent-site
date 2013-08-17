@@ -36,7 +36,8 @@ module.exports = (grunt) ->
         "components/monocle/monocle.js",
         "components/appnima.js/appnima.js",
         "components/hope/hope.js",
-        "components/isotope/jquery.isotope.min.js",
+        #"components/isotope/jquery.isotope.min.js",
+        "components/gridalicious/jquery.grid-a-licious.min.js",
         "components/device.js/device.js"]
 
     # =========================================================================
